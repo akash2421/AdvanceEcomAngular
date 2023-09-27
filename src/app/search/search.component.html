@@ -1,0 +1,22 @@
+<div class="container my-3">
+    <div class="row search-item" *ngFor="let ser of searchResult">
+        <h2 *ngIf="!notfound">{{notfound}}</h2>
+        <div class="col-sm-3" >
+            <a  routerLink="/details/{{ser.id}}">
+            <img src="{{ser.image}}"
+                alt="">
+            </a>
+        </div>
+        <div class="col-sm-8 details">
+            <a  routerLink="/details/{{ser.id}}">
+
+            <h6>
+               {{ser.name}}
+            </h6>
+            <p>Price :{{ser.price | currency :"INR"}}</p>
+            <p><span>Color:{{ser.color}}</span><span>Category : {{ser.category}}</span></p>
+            <p>{{ser.desciption}}</p>
+            </a>
+        </div>
+    </div>
+   

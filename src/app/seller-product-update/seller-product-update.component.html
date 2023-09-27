@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row mx-5">
+        <div *ngIf="productMessage"  class="alert alert-sucesses" role="alert">
+           {{productMessage}}
+          </div>
+        <h3 class=" my-2 text-center">Update Product</h3>
+        <div class="col mx-5">
+            <form #updateProduct="ngForm" (ngSubmit)="submit(updateProduct.value)">
+                <div class="form-group col">
+                    <label for="inputEmail4">Email</label>
+                    <input type="text" ngModel="{{productData?.name}}"  class="form-control" name="name" placeholder="Enter product Name">
+                </div>
+                <div class="form-group col">
+                    <label for="inputPassword4">Price</label>
+                    <input type="text"  ngModel="{{productData?.price}}"  class="form-control" name="price" placeholder="Price">
+                </div>
+                <div class="form-group col">
+                    <label for="inputPassword4">Color</label>
+                    <input type="text"  ngModel="{{productData?.color}}"  class="form-control" name="color" placeholder="color">
+                </div>
+                <div class="form-group col">
+                    <label for="inputPassword4">category</label>
+                    <input type="text"  ngModel="{{productData?.category}}"  class="form-control" name="category" placeholder="category">
+                </div>
+
+               
+                <div class="form-group col">
+                    <label for="inputAddress">Image Url</label>
+                    <input type="text"  ngModel="{{productData?.image}}"  class="form-control" name="image" placeholder="Image Url">
+                </div>
+                <div class="form-group col">
+                    <label for="inputAddress">desciption</label>
+                    <textarea class="form-control"  ngModel="{{productData?.desciption}}"  name="desciption" placeholder="Desciption"></textarea>
+                </div>
+                <!-- <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Upload Product Image</label>
+                </div> -->
+
+                <button type="submit" class="btn btn-primary mt-2 w-100">Update Product</button>
+            </form>
+        </div>
+
+    </div>
+</div>

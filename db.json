@@ -1,0 +1,205 @@
+{
+  "seller": [
+    {
+      "name": "Akash",
+      "email": "akash@seller.com",
+      "password": "Akash2421",
+      "cpassword": "Akash2421",
+      "id": 1
+    },
+    {
+      "name": "Kunal",
+      "email": "kunal@seller.com",
+      "password": "kunal2421",
+      "cpassword": "Kunal2421",
+      "id": 2
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "cpassword": "",
+      "id": 3
+    },
+    {
+      "name": "Suresh",
+      "email": "suresh@seller.com",
+      "password": "Akash2421",
+      "cpassword": "Akash2421",
+      "id": 4
+    },
+    {
+      "name": "Zakir",
+      "email": "Zakir@seller.com",
+      "password": "Akash",
+      "cpassword": "2421",
+      "id": 5
+    },
+    {
+      "name": "Akash Suthar",
+      "email": "Zakir@seller.com",
+      "password": "22222",
+      "cpassword": "22222",
+      "id": 6
+    },
+    {
+      "name": "Ravith",
+      "email": "asas",
+      "password": "aaa",
+      "cpassword": "aaaa",
+      "id": 7
+    },
+    {
+      "name": "aaa",
+      "email": "aaa",
+      "password": "aaaa",
+      "cpassword": "aaaa",
+      "id": 8
+    },
+    {
+      "name": "Akash Suthar s",
+      "email": "ravi@seller.com",
+      "password": "asd",
+      "cpassword": "saas",
+      "id": 9
+    },
+    {
+      "name": "sunil",
+      "email": "sunila@gmail.com",
+      "password": "123",
+      "cpassword": "123131",
+      "id": 10
+    },
+    {
+      "name": "rani",
+      "email": "rani@gmail.com",
+      "password": "Aakahs",
+      "cpassword": "123",
+      "id": 11
+    },
+    {
+      "name": "Akash Suthar",
+      "email": "asas",
+      "password": "aaaaa",
+      "cpassword": "aaaaaaaaaa",
+      "id": 12
+    },
+    {
+      "name": "bharat",
+      "email": "bharat@gmail.com",
+      "password": "Akash",
+      "cpassword": "Akash",
+      "id": 13
+    },
+    {
+      "name": "Ravith",
+      "email": "akashsuthar2015@gmail.com",
+      "password": "aaaaa",
+      "cpassword": "aaaa",
+      "id": 14
+    }
+  ],
+  "products": [
+    {
+      "name": "Iphone 12",
+      "price": "200000",
+      "color": "Red",
+      "category": "Mobile",
+      "image": "https://m.media-amazon.com/images/I/61-r9zOKBCL._AC_UF1000,1000_QL80_.jpg",
+      "desciption": "aaaa",
+      "id": 1
+    },
+    {
+      "name": "Iphone 19",
+      "price": "123333234",
+      "color": "Blue",
+      "category": "Phone",
+      "image": "https://m.media-amazon.com/images/I/61-r9zOKBCL._AC_UF1000,1000_QL80_.jpg",
+      "desciption": "User has purchase",
+      "id": 2
+    },
+    {
+      "name": "Iphon1",
+      "price": "20000",
+      "color": "White",
+      "category": "Mobile",
+      "image": "https://rukminim1.flixcart.com/image/850/1000/mobile/t/u/b/apple-iphone-6s-na-original-imaebym7xbtayesf.jpeg?q=90",
+      "desciption": "Good",
+      "id": 3
+    },
+    {
+      "name": "Dell",
+      "price": "20000",
+      "color": "green",
+      "category": "Laptop",
+      "image": "https://m.media-amazon.com/images/I/61Dw5Z8LzJL._AC_UF1000,1000_QL80_.jpg",
+      "desciption": "Hoog laptop",
+      "id": 4
+    }
+  ],
+  "user": [
+    {
+      "name": "kumar",
+      "email": "kumar@gmail.com",
+      "password": "11222",
+      "cpassword": "121212",
+      "id": 1
+    },
+    {
+      "name": "suresh",
+      "email": "suresh@gmail.com",
+      "password": "Akash2421@",
+      "cpassword": "Akash2421@",
+      "id": 2
+    },
+    {
+      "name": "Akash Suthar",
+      "email": "Zakir@seller.com",
+      "password": "aaa",
+      "cpassword": "aaa",
+      "id": 3
+    },
+    {
+      "name": "Akash Suthar",
+      "email": "akashsuthar2019@gmail.com",
+      "password": "aaa",
+      "cpassword": "aaa",
+      "id": 4
+    },
+    {
+      "name": "Akash suthar",
+      "email": "Aakash@gmai.com",
+      "password": "aaaa",
+      "cpassword": "aaaa",
+      "id": 5
+    },
+    {
+      "name": "Ravith",
+      "email": "ravi@seller.com",
+      "password": "Akash",
+      "cpassword": "Akash",
+      "id": 6
+    },
+    {
+      "name": "Zakir",
+      "email": "bharat@gmail.com",
+      "password": "1111",
+      "cpassword": "1111",
+      "id": 7
+    },
+    {
+      "name": "Akash",
+      "email": "Aka",
+      "password": "111",
+      "cpassword": "1111",
+      "id": 8
+    },
+    {
+      "name": "Akash",
+      "email": "aaa",
+      "password": "Akash",
+      "cpassword": "Suthar",
+      "id": 9
+    }
+  ]
+}

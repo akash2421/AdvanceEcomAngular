@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="card">
+        <div class="container-fliud">
+            <div class="wrapper row" *ngIf="productData">
+                <div class="preview col-md-6" >
+                    
+                    <div class="preview-pic tab-content">
+                      <div class="tab-pane  active" id="pic-1">
+                        <img src="{{productData.image}}" /></div>
+                   
+                    </div>
+                 
+                    
+                </div>
+                <div class="details col-md-6">
+                    <h3 class="product-title">{{productData.name}}</h3>
+
+                    <p class="product-description">{{productData.desciption}}</p>
+                    <h4 class="price">current price: <span>{{productData.price}}</span></h4>
+                   
+                    <h5 class="price">colors:
+                        <span class="color" [style.backgroundColor]="productData.color" > </span>
+                    </h5>
+                    <h5 class="price">Category:
+                        <span >{{productData.category}}</span>
+                    </h5>
+
+                    
+                    <div class="qty">Quantity:
+                        <br>
+                        <button (click)="dec('min')">-</button>
+                        <input type="text" value="{{productQuantity}}">
+                        <button (click)="inc('plus')">+</button>
+                    </div>
+
+                    <div class="action mt-4">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                        <button class="add-to-cart btn btn-default mx-2" type="button">Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

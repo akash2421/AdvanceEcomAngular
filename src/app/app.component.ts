@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { SellerService } from './services/seller.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ecom';
+
+ 
 }

@@ -1,0 +1,56 @@
+<div class="container">
+    <div *ngIf="!showLogin" class="center">
+        <h1>Register Seller</h1>
+        <form method="POST" #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+            <div class="txt_field">
+                <input type="text" ngModel name="name" required>
+                <span></span>
+                <label>Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="email" name="email" ngModel required>
+                <span></span>
+                <label>Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" name="password" ngModel required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" name="cpassword" ngModel required>
+                <span></span>
+                <label>Confirm Password</label>
+            </div>
+            <input name="submit" type="Submit" value="Sign Up">
+            <div class="signup_link">
+                Have an Account ? <a (click)="openLogin()">Login Here</a>
+            </div>
+        </form>
+    </div>
+    <!--Login-->
+    <div *ngIf="showLogin" class="center">
+        <div *ngIf="authError" class="alert alert-danger" role="alert">
+            {{authError}}
+          </div>
+        <h1>Login Seller</h1>
+        <form method="POST" #sellerLogin="ngForm" (ngSubmit)="LogIn(sellerLogin.value)">
+
+            <div class="txt_field">
+                <input type="email" name="email" ngModel required>
+                <span></span>
+                <label>Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" name="password" ngModel required>
+                <span></span>
+                <label>Password</label>
+            </div>
+
+            <input name="submit" type="Submit" value="Login">
+            <div class="signup_link">
+                If don't Have an Account ? <a (click)="openSign()" >Sign Here</a>
+            </div>
+        </form>
+    </div>
+</div>

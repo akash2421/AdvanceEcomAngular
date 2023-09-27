@@ -1,0 +1,32 @@
+<nav>
+    <h1><a routerLink="">Ecom</a></h1>
+    <div *ngIf="menuType == 'default' " class="search">
+        <input #searchInput (keyup)="searchproduct($event)" (blur)="searhText()" type="text" class="form-control"
+            placeholder="Search Product">
+        <button (click)="searchBtn(searchInput.value)" class="btn btn-outline-secondary" type="button"
+            id="button-addon2">Search</button>
+        <ul class="suggested-result" *ngIf="searchResult">
+            <li *ngFor="let sugg of searchResult">
+                <a (mousedown)="redirectToDetails(sugg.id)">{{sugg.name}}</a>
+            </li>
+        </ul>
+    </div>
+    <ul>
+        <li><a *ngIf="menuType == 'default'" routerLink="">Home</a></li>
+        <li><a *ngIf="menuType == 'default'" routerLink="seller-auth">Seller</a></li>
+        <li><a *ngIf="menuType == 'default'" routerLink="user-auth">login / SignUp</a></li>
+        <!-- seller menu -->
+        <li><a *ngIf="menuType == 'seller'" routerLink="seller-home">Product list</a></li>
+        <li><a *ngIf="menuType == 'seller'" routerLink="seller-add-product">Add Product</a></li>
+        <li><a *ngIf="menuType == 'seller'" (click)="sellerLogout()">Logout</a></li>
+        <li><a *ngIf="menuType == 'seller'">{{sellerName | titlecase}}</a></li>
+        <!-- User menu -->
+        <li><a *ngIf="menuType == 'user'" routerLink=" ">Home</a></li>
+        <li><a *ngIf="menuType == 'user'" routerLink=" ">{{userName}}</a></li>
+        <li><a *ngIf="menuType == 'user'" (click)="userLogout()">Logout</a></li>
+        <li><a *ngIf="menuType == 'user'">Cart(0)</a></li>
+
+
+    </ul>
+</nav>
+<div>

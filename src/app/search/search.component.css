@@ -1,0 +1,23 @@
+img{
+   width: 100%;
+   object-fit: contain;
+   height: 200px;
+}
+.search-item
+{
+    border-top: 1px solid #f1f1f1;
+    margin: 25px auto;
+    width: 800px;
+    padding: 10px;
+
+}
+h6{
+    font-size: 24px;
+    color: violet;
+}
+.details p{
+    margin: 5px;
+}
+.details span{
+    margin-right:10px;
+}
